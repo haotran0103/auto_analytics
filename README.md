@@ -1,34 +1,46 @@
-# auto_analytics
-This project demo auto data analyst with 2 dashboards 
-statistical analysis, Descriptive statistics
-prediction model
+# Data Analysis Dashboard with Streamlit
 
-## Installation
+## Project Overview
+This project is a data analysis dashboard built using **Streamlit** to visualize and perform descriptive statistics on a given dataset. The application is designed to allow users to upload datasets, clean the data, and generate visual insights such as correlation matrices, histograms, pie charts, and more. The project is tailored for general-purpose descriptive analysis, providing both numerical and categorical data insights.
 
-### Clone the Repository
-To get started, clone this project to your local machine using the following command:
-git clone https://github.com/haotran0103/auto_analytics.git
+## Features
+- **Data Cleaning**: Automatically handles missing values by dropping empty rows and resetting indices.
+- **Descriptive Statistics**: Presents detailed statistical summaries including count, mean, standard deviation, min, max, and percentiles for numerical columns.
+- **Correlation Heatmap**: Visualizes relationships between numerical variables through a correlation matrix.
+- **Histograms with KDE**: Displays the distribution of numerical columns using histograms with optional KDE (Kernel Density Estimate) for smooth curves.
+- **Categorical Analysis**: Generates pie charts for categorical columns to visualize distribution.
+- **Outlier Detection**: Uses box plots to detect outliers in numerical data.
 
-Install env
-cd auto_analytics
+## Technologies Used
+- **Python**: Core programming language.
+- **Streamlit**: For building the interactive data analysis dashboard.
+- **Pandas**: For data manipulation and cleaning.
+- **Seaborn & Matplotlib**: For advanced data visualization.
+- **NumPy**: For numerical operations.
 
-pip install -r requirements.txt
+## How to Run the Project
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/data-analysis-dashboard.git
+   cd data-analysis-dashboard
+   ```
 
-Running the Project
-To run the Auto Data Analyst application, execute the following command:
-streamlit run app.py
-This will start the Streamlit application and open it in your default web browser.
+2. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Usage
-Once the application is running, you can interact with it through your web browser. The application provides the following features:
+3. Run the Streamlit application:
+   ```bash
+   streamlit run app.py
+   ```
 
-Dashboard 1: Company sales and inventory
+4. Upload your dataset and explore the interactive visualizations!
 
-Dashboard 2: customer feedback
-
-Statistical Analysis
-
-Descriptive Statistics
-
-Prediction Model all model machine learning i have to make rediction
-
+## Project Structure
+```
+├── app.py                  # Main Streamlit application script
+├── requirements.txt         # Python dependencies
+├── README.md                # Project documentation
+└── data/                    # Folder for storing datasets (optional)
+```
